@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="title">
+        <ion-icon name="library-outline"></ion-icon>
+        <h1>the library</h1>
+        <ion-icon name="library-outline"></ion-icon>
+      </div>
+      <section class="card library-info">
+        <div class="lib-stats">
+          <h3>Library Information</h3>
+          <p>Total books: <span class='total'>0</span></p>
+          <p>Unread books: <span class="unread">0</spanclass></p>
+        </div>
+        <div class="buttons">
+          <button data-btn="add">add a book</button>
+          <button data-btn="clear">clear all books</button>
+        </div>
+      </section>
+    </header>
+    <div class="modal-container hide">
+      <section class="modal">
+        <div class="modal-title">
+          <h2>add new book</h2>
+          <span class="modal-close"><ion-icon name="close-outline"></ion-icon></span>
+        </div>
+        <form>
+          <div>
+            <label for="title">Title:</label><br />
+            <input id="title" type="text" name="title" placeholder="Book Title" required />
+          </div>
+          <div>
+            <label for="author">Author:</label><br />
+            <input id="author" type="text" name="author" placeholder="Author" required />
+          </div>
+          <div>
+            <label for="page">Pages:</label><br />
+            <input id="Pages" type="number" name="pages" placeholder="Pages" required />
+          </div>
+          <div>
+            <label for="read">Have you read?</label><br />
+            <select id="read" name="read" required>
+              <option value="false">Not yet</option>
+              <option value="true">done read</option>
+            </select>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+    <main class="bookshelf container">
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
