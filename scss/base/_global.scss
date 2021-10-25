@@ -1,0 +1,11 @@
+.container {
+  width: Min(90%, 1000px);
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}

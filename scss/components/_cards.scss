@@ -1,0 +1,55 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixin' as *;
+
+.card {
+  @include flex(1.5);
+  padding: 0.75rem 1.5rem;
+  border: 3px solid $burntOrange;
+  border-radius: 10px;
+
+  h3 {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.book {
+  padding: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  background: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  color: $desertSun;
+  font-weight: 600;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.5);
+  }
+
+  button:last-child {
+    color: $desertSun;
+    background: $navyBlue;
+  }
+}
+
+// popup modal
+.modal-container {
+  @include flex(1);
+  padding: 2rem;
+  width: 350px;
+  height: min-content;
+  top: 50px;
+  background: $navyBlue;
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.modal-container.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
