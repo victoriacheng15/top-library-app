@@ -19,4 +19,4 @@ The data is stored in localStorage and only accessible on the computer that it w
 
 ### Live Demo
 
-See the [demo](https://victoriacheng15.github.io/top-library/)
+See the [demo](https://victoriacheng15.github.io/top-library-app/)
